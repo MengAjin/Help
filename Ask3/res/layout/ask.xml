@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9ebb1"
+    android:orientation="vertical" >
+
+    
+ 
+    <Button
+        android:id="@+id/quxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消提问"
+        
+       />
+
+  
+
+    <Button
+        android:id="@+id/jieshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束提问"
+        android:layout_gravity="right"
+       />
+
+    <TextView
+        android:id="@+id/deplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="问题详情"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" 
+        android:hint="请在此输入你要追问的问题" />
+
+    <Button
+        android:id="@+id/zhuiwen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="追问" 
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="回答" />
+
+</LinearLayout>
