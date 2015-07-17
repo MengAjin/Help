@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        custom:titleText="易助"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="12sp"
+        android:id="@+id/topbarInFirstActivity" />
+
+    <ImageView
+        android:src="@drawable/blue_circle3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/sosImageView"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="200dp"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="求救"
+        android:textSize="30sp"
+        android:id="@+id/forSos"
+        android:layout_alignTop="@+id/sosImageView"
+        android:layout_alignRight="@+id/sosImageView"
+        android:layout_alignLeft="@+id/sosImageView"
+        android:layout_alignBottom="@+id/sosImageView"
+        android:gravity="center"
+        android:clickable="false"
+        />
+
+    <ImageView
+        android:src="@drawable/blue_circle3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/helpImageView"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="30dp"
+        android:clickable="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="求助"
+        android:textSize="25sp"
+        android:id="@+id/forHelp"
+        android:layout_alignTop="@+id/helpImageView"
+        android:layout_alignRight="@+id/helpImageView"
+        android:layout_alignLeft="@+id/helpImageView"
+        android:layout_alignBottom="@+id/helpImageView"
+        android:gravity="center"
+        android:clickable="false"
+        />
+
+    <ImageView
+        android:src="@drawable/blue_circle3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/questionImageView"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="180dp"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="提问"
+        android:textSize="20sp"
+        android:id="@+id/forQuestion"
+        android:layout_alignTop="@+id/questionImageView"
+        android:layout_alignRight="@+id/questionImageView"
+        android:layout_alignLeft="@+id/questionImageView"
+        android:layout_alignBottom="@+id/questionImageView"
+        android:gravity="center"
+        android:clickable="false"
+        />
+
+
+    <com.example.firstprogram.BottomBar
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        custom:ImageView1="@drawable/face1"
+        custom:ImageView1Height="50dp"
+        custom:ImageView1Width="50dp"
+        custom:ImageView2="@drawable/face2"
+        custom:ImageView2Height="50dp"
+        custom:ImageView2Width="50dp"
+        custom:ImageView3="@drawable/face3"
+        custom:ImageView3Height="50dp"
+        custom:ImageView3Width="50dp"
+        custom:ImageView4="@drawable/face4"
+        custom:ImageView4Height="50dp"
+        custom:ImageView4Width="50dp"
+        />
+</RelativeLayout>
