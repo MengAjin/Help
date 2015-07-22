@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="发送成功"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="11sp"
+        custom:leftText="返回"
+        custom:leftTextColor="#123412"
+        custom:rightText=""
+        custom:rightTextColor="#123412"
+        android:id="@+id/topBar2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ha"
+        android:id="@+id/helpSuccessTextView"
+        android:layout_marginTop = "16dp"
+        android:layout_marginLeft = "16dp"
+        android:layout_marginRight = "16dp"
+        android:layout_marginBottom = "16dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:minLines="15"
+        android:maxLines="15"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消求助"
+        android:id="@+id/helpCancel"
+        android:layout_marginLeft = "16dp"
+        android:layout_marginRight = "16dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

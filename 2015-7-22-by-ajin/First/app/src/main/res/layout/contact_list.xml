@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="个人通讯录"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="11sp"
+        custom:rightText="紧急联系人"
+        custom:rightTextColor="#123412"
+        custom:leftText="返回"
+        custom:leftTextColor="#123412"
+        android:id="@+id/topbarInContactList" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好友分组"
+            android:layout_alignBottom="@+id/add_friend_in_contactlist"/>
+        <Button
+            android:id="@+id/add_friend_in_contactlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加好友"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ExpandableListView
+        android:id="@+id/expandablelistview_in_contactlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+    </ExpandableListView>
+
+
+</LinearLayout>
