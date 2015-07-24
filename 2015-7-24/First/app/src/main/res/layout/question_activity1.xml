@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="提问"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="11sp"
+        custom:leftText="返回"
+        custom:leftTextColor="#123412"
+        custom:rightText="提交"
+        custom:rightTextColor="#123412"
+        android:id="@+id/topBar_in_questionactivity1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionTitle"
+        android:layout_below="@+id/topBar_in_questionactivity1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop = "16dp"
+        android:layout_marginLeft = "16dp"
+        android:layout_marginRight = "16dp"
+        android:layout_marginBottom = "16dp"
+        android:hint="标题" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minLines="7"
+        android:maxLines="7"
+        android:scrollbars="vertical"
+        android:id="@+id/questionContent"
+        android:gravity="top"
+        android:layout_marginTop = "16dp"
+        android:layout_below="@+id/questionTitle"
+        android:layout_alignLeft="@+id/questionTitle"
+        android:layout_alignRight="@+id/questionTitle"
+        android:hint="请输入详细内容" />
+
+    <ImageButton
+        android:src="@android:drawable/ic_menu_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频"
+        android:id="@+id/questionVideo"
+        android:layout_below="@+id/questionContent"
+        android:layout_marginTop = "16dp"
+        android:layout_alignLeft="@+id/questionContent"
+        android:layout_alignStart="@+id/questionContent" />
+
+    <ImageButton
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="照片"
+        android:id="@+id/questionPhoto"
+        android:layout_below="@+id/questionContent"
+        android:layout_marginTop = "16dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="语音"
+        android:id="@+id/questionVoice"
+        android:layout_below="@+id/questionContent"
+        android:layout_marginTop = "16dp"
+
+        android:layout_alignBottom="@+id/questionPhoto"
+        android:layout_alignRight="@+id/questionTitle"
+        android:layout_alignEnd="@+id/questionContent" />
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要发送给附近"/>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="千米的人"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
