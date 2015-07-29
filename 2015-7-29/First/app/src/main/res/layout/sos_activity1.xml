@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="求救"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="11sp"
+        android:id="@+id/topbarInSosActivity1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <ImageView
+            android:src="@drawable/gray"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/sos1SafeView"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="安全"
+            android:textSize="40sp"
+            android:layout_alignTop="@+id/sos1SafeView"
+            android:layout_alignRight="@+id/sos1SafeView"
+            android:layout_alignLeft="@+id/sos1SafeView"
+            android:layout_alignBottom="@+id/sos1SafeView"
+            android:gravity="center"
+            android:clickable="false"
+            />
+        <ImageView
+            android:src="@drawable/gray"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/sos1HealthView"
+            android:layout_toRightOf="@+id/sos1SafeView"
+            android:layout_marginTop="200dp"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="健康"
+            android:textSize="40sp"
+            android:layout_alignTop="@+id/sos1HealthView"
+            android:layout_alignRight="@+id/sos1HealthView"
+            android:layout_alignLeft="@+id/sos1HealthView"
+            android:layout_alignBottom="@+id/sos1HealthView"
+            android:gravity="center"
+            android:clickable="false"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="6秒后发送默认求救信息！"
+        android:textSize="20sp"
+        android:textColor="#fffb081c"
+        android:id="@+id/sosSecond1"
+        android:layout_weight="1"
+        android:maxLines="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="取消求救"
+        android:id="@+id/sos1Cancel"
+        />
+
+</LinearLayout>

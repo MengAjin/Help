@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容："
+        android:textColor="#ff271dff"/>
+    <TextView
+        android:id="@+id/mypublish_help_listitem_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:minLines="2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布时间："
+        android:textColor="#ff271dff"/>
+    <TextView
+        android:id="@+id/mypublish_help_listitem_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
