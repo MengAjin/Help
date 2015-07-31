@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.firstprogram.TopBar
+        android:id="@+id/topbar_in_emergency_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="添加紧急联系人"
+        custom:titleTextSize="11sp"
+        custom:titleTextColor="#123421"
+        custom:leftText="返回"
+        custom:leftTextColor="#123421" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp">
+        <EditText
+            android:id="@+id/emergency_add_eidt_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:hint="请输入对方的手机号（11位）"
+            android:inputType="number"/>
+        <ImageView
+            android:id="@+id/emergency_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:src="@drawable/search_bar_icon_normal"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/emergency_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"></LinearLayout>
+
+</LinearLayout>
