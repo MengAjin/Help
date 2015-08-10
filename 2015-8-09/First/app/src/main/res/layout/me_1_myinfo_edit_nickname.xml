@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.firstprogram.TopBar
+        android:id="@+id/topbar_in_modify_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="更改昵称"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="11sp"
+        custom:leftText="返回"
+        custom:leftTextColor="#123421"
+        custom:rightText="提交"
+        custom:rightTextColor="#123421"/>
+    <EditText
+        android:id="@+id/name_after_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="好的名字可以让你的朋友更容易记住你"/>
+</LinearLayout>

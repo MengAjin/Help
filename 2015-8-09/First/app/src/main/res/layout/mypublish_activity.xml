@@ -1,0 +1,41 @@
+<RelativeLayout android:id="@+id/main_layout"
+    android:background="@color/activity_bg_color"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="我发出的"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="11sp"
+        android:id="@+id/topbarInNearActivity" />
+
+    <RelativeLayout android:id="@+id/category_layout"
+        android:background="@drawable/bg_category_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_category_height"
+        android:layout_below="@id/topbarInNearActivity" >
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_category_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <com.example.my_publish.CategoryTabStrip
+                android:id="@+id/category_strip"
+                android:paddingLeft="6.0dip"
+                android:paddingRight="6.0dip"
+                android:clipToPadding="false"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/top_category_height" />
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/category_layout" />
+</RelativeLayout>
