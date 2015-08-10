@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">易助</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bottom_btn1">求助</string>
+    <string name="bottom_btn2">附近</string>
+    <string name="bottom_btn3">个人通讯录</string>
+    <string name="bottom_btn4">我</string>
+    <string name="bottom_btn5">设置</string>
+
+    <string name="category_sos">求救</string>
+    <string name="category_help">求助</string>
+    <string name="category_question">提问</string>
+
+</resources>
