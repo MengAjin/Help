@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="我参与的"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="11sp"
+        custom:rightText=""
+        custom:rightTextColor="#123412"
+        custom:leftText=""
+        custom:leftTextColor="#123412"
+        android:id="@+id/topbar" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

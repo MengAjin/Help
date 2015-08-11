@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:titleText="求救完成"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="11sp"
+        android:id="@+id/topbar_in_evaluate"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="帮客："/>
+    <ListView
+        android:id="@+id/activity_evaluate_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"></ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="您也可以点击“一键评价”来快速为每个帮客评价"
+        />
+    <Button
+        android:id="@+id/one_key_evaluate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="一键评价"
+        />
+
+</LinearLayout>

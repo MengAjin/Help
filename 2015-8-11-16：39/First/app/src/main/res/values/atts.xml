@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopBar">
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftBackground" format="reference|color" />
+        <attr name="leftText" format="string" />
+
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightBackground" format="reference|color" />
+        <attr name="rightText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomBar">
+        <attr name="ImageView1" format="reference" />
+        <attr name="ImageView1Height" format="dimension" />
+        <attr name="ImageView1Width" format="dimension" />
+        <attr name="ImageView2" format="reference" />
+        <attr name="ImageView2Height" format="dimension" />
+        <attr name="ImageView2Width" format="dimension" />
+        <attr name="ImageView3" format="reference" />
+        <attr name="ImageView3Height" format="dimension" />
+        <attr name="ImageView3Width" format="dimension" />
+        <attr name="ImageView4" format="reference" />
+        <attr name="ImageView4Height" format="dimension" />
+        <attr name="ImageView4Width" format="dimension" />
+    </declare-styleable>
+
+
+
+</resources>

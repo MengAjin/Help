@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.firstprogram.TopBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        custom:titleText="设置"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="12sp"
+        android:id="@+id/topbarInMe1Activity"
+        android:background="@drawable/login_button1" />
+
+    <LinearLayout
+        android:id="@+id/culture"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:focusable="true"
+        android:background="#ffffffff">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:minLines="1"
+            android:text="易助文化"
+            android:textSize="25dp"
+            android:focusable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:focusable="true"
+        android:background="#ffffffff">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:minLines="1"
+            android:text="意见反馈"
+            android:textSize="25dp"
+            android:focusable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:focusable="true"
+        android:background="#ffffffff">
+        <TextView
+            android:id="@+id/log_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:minLines="1"
+            android:text="退出登录"
+            android:textSize="25dp"
+            android:focusable="false"/>
+    </LinearLayout>
+
+</LinearLayout>

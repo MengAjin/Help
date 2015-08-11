@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_grey">#f0f0f0</color>
+    <color name="super_light_grey">#f6f6f6</color>
+    <color name="white">#ffffff</color>
+
+    <color name="light_blue">#00CCCC</color>
+    <color name="activity_bg_color">#fffafafa</color>
+    <color name="top_category_bar_background">#ffeeeeee</color>
+    <color name="divider">#ffdddddd</color>
+
+    <color name="category_tab_text">#ff707070</color>
+    <color name="category_tab_text_dark">#fffafafa</color>
+    <color name="category_tab_highlight_text">#fffafafa</color>
+    <color name="category_tab_highlight_text_dark">#ffd43d3d</color>
+    <color name="category_tab_highlight_bg">#ff00CCCC</color>
+    <color name="category_tab_highlight_dark_bg">#fffafafa</color>
+
+    <!-- chatting -->
+    <color name="text_color_shenhui_677582">#677582</color>
+    <color name="text_color_qianhui_a3a4a4">#a3a4a4</color>
+    <color name="text_color_heise_504f4f">#504f4f</color>
+    <color name="text_color_baise_fffefe">#fffefe</color>
+    <color name="text_color_hongse_ff4318">#ff4318</color>
+    <color name="text_color_zhongheise_461bd4">#461bd4</color>
+    <color name="text_color_zhonghongse_461b04">#461b04</color>
+    <color name="text_color_huangse_ff8800">#ff8800</color>
+    <color name="text_color_shurukuang_aeb6bd">#aeb6bd</color>
+    <color name="user_detail_public_bg">#f3f3f3</color>
+    <color name="user_list_public_bg">#e5e6e7</color>
+    <color name="normal_text">#FF758493</color>
+
+</resources>
