@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectable_background"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip">
+
+    <TextView
+        android:id="@+id/list_item_card_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/Widget.Holo.Light.TextView"
+        android:gravity="left"
+        android:layout_margin="5dp"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:text="用户名"/>
+    <TextView
+        android:id="@+id/list_item_card_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:maxLines="3"
+        android:layout_margin="5dp"
+        android:text="内容文本"/>
+
+    <View
+        android:id="@+id/list_item_seperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@color/light_grey" />
+    <TextView
+        android:id="@+id/list_item_card_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="right"
+        android:text="进行中"/>
+    <TextView
+        android:id="@+id/list_item_card_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="right"
+        android:text="2015-7-28"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:background="@color/light_grey" />
+
+
+</LinearLayout>
